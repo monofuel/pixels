@@ -52,7 +52,7 @@ proc fontByName(name: string; size: int): FontPtr =
     elif defined(macosx):
       const location = r"/Library/Fonts/"
     elif defined(linux):
-      const location = r"/usr/share/fonts/TTF/"
+      const location = r"/usr/share/fonts/mozilla-fira/"
     elif defined(bsd):
       const location = "/usr/local/lib/X11/fonts/TrueType/"
     else:
