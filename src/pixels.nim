@@ -57,7 +57,7 @@ proc fontByName(name: string; size: int): FontPtr =
       const location = "/usr/local/lib/X11/fonts/TrueType/"
     else:
       const location = ""
-    result = openFont(cstring(location & name & ".ttf"), size.cint)
+    result = openFont(cstring(location & name & ".otf"), size.cint)
 
 proc drawText*(x, y: int; text: string; size: int; color: Color = White) =
   var font = fontByName(when defined(osx): "Arial Unicode"
